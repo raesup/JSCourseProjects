@@ -5,6 +5,11 @@ const closeButton = document.querySelector(".close");
 const main = document.querySelector(".window");
 const overlay = document.querySelector(".overlay");
 
+function hidden() {
+  main.classList.add("hidden");
+  overlay.classList.add("hidden");
+}
+
 showButtons.forEach((button) => {
   button.addEventListener("click", () => {
     main.classList.remove("hidden");
@@ -13,11 +18,15 @@ showButtons.forEach((button) => {
 });
 
 closeButton.addEventListener("click", () => {
-  main.classList.add("hidden");
-  overlay.classList.add("hidden");
+  hidden();
 });
 
 overlay.addEventListener("click", () => {
-  main.classList.add("hidden");
-  overlay.classList.add("hidden");
+  hidden();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    hidden();
+  }
 });
