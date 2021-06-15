@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Modal Window</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <button class="show">Show modal 1</button>
+        <button class="show">Show modal 2</button>
+        <button class="show">Show modal 3</button>
+      </div>
+
+      <div class="window hidden">
+        <button class="close"><i class="fas fa-times"></i></button>
+        <h3 class="heading">Raesup Kim</h3>
+        <p class="main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum
+          natus corrupti magnam facere provident earum ex amet asperiores sequi
+          explicabo, itaque perspiciatis tempora inventore aliquam. Ullam modi
+          autem dolor.
+        </p>
+      </div>
+
+      <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
